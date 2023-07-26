@@ -18,8 +18,7 @@ const Header = () => {
             <FastfoodIcon/>
             My Restaurant
             </Typography>
-            <Box sx={{display: {xs:"none", sm:"block"}}}>
-              <ul className='navigation-menu'>
+              <ul className='mobile-navigation'>
                 <li>
                   <Link to={"/"}>Home</Link>
                 </li>
@@ -33,7 +32,6 @@ const Header = () => {
                   <Link to={"/contact"}>Contact</Link>
                 </li>
               </ul>
-            </Box>
     </Box>
   )
   return (
