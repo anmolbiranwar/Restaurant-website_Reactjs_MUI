@@ -64,6 +64,11 @@ const Header = () => {
             </Box>
           </Toolbar>
         </AppBar>
+        <Box component="nav">
+            <Drawer variant="temporary" open={mobileOpen} onClose={handleDrawerToggle} sx={{display:{xs:'block', sm:'none'}}}>
+              {drawer}
+            </Drawer>
+        </Box>
       </Box> 
     </>
   )
