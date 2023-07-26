@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import {AppBar, Box, IconButton, Toolbar, Typography} from "@mui/material";
+import {AppBar, Drawer, Box, IconButton, Toolbar, Typography} from "@mui/material";
 import FastfoodIcon from '@mui/icons-material/Fastfood';
 import MenuIcon from '@mui/icons-material/Menu';
 import {Link} from 'react-router-dom';
@@ -67,7 +67,12 @@ const Header = () => {
           </Toolbar>
         </AppBar>
         <Box component="nav">
-            <Drawer variant="temporary" open={mobileOpen} onClose={handleDrawerToggle} sx={{display:{xs:'block', sm:'none'}}}>
+            <Drawer variant="temporary" open={mobileOpen} onClose={handleDrawerToggle} sx={{display:{xs:'block', sm:'none'}, "& .MuiDrawer-paper":{
+              boxSizing: "border-box",
+              width:"240px",
+            },
+            }}
+            >
               {drawer}
             </Drawer>
         </Box>
