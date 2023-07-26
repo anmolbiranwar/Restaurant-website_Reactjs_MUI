@@ -1,6 +1,7 @@
 import React from 'react'
-import {AppBar, Box, Toolbar, Typography} from "@mui/material";
+import {AppBar, Box, IconButton, Toolbar, Typography} from "@mui/material";
 import FastfoodIcon from '@mui/icons-material/Fastfood';
+import MenuIcon from '@mui/icons-material/Menu';
 import {Link} from 'react-router-dom';
 import "../../styles/HeaderStyles.css"
 
@@ -10,6 +11,9 @@ const Header = () => {
       <Box>
         <AppBar component={"nav"} sx={{bgcolor:"black"}}>
           <Toolbar>
+            <IconButton color='inherit' aria-label='open drawer' edge='start' sx={{mr:2, display:{sm:"none"}}}>
+              <MenuIcon />
+            </IconButton>
           <Typography color={"goldenrod"} variant='h6' component="div" sx={{flexGrow: 1}}>
             <FastfoodIcon/>
             My Restaurant
