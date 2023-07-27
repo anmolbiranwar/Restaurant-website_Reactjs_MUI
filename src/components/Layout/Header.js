@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import {AppBar, Drawer, Box, IconButton, Toolbar, Typography} from "@mui/material";
+import {AppBar, Drawer, Box, IconButton, Toolbar, Typography, Divider} from "@mui/material";
 import FastfoodIcon from '@mui/icons-material/Fastfood';
 import MenuIcon from '@mui/icons-material/Menu';
 import {Link} from 'react-router-dom';
@@ -44,10 +44,11 @@ const Header = () => {
             >
               <MenuIcon />
             </IconButton>
-          <Typography color={"goldenrod"} variant='h6' component="div" sx={{flexGrow: 1}}>
+          <Typography color={"goldenrod"} variant='h6' component="div" sx={{flexGrow: 1, my:2}}>
             <FastfoodIcon/>
             My Restaurant
             </Typography>
+            <Divider />
             <Box sx={{display: {xs:"none", sm:"block"}}}>
               <ul className='navigation-menu'>
                 <li>
@@ -75,6 +76,9 @@ const Header = () => {
             >
               {drawer}
             </Drawer>
+        </Box>
+        <Box sx={{p:1}}>
+        <Toolbar />
         </Box>
       </Box> 
     </>
