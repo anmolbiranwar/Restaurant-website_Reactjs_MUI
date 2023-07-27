@@ -4,7 +4,7 @@ import { Box, Typography } from '@mui/material'
 const Footer = () => {
   return (
     <>
-    <Box>
+    <Box sx={{textAlign:'center', bgcolor:'#1A1A19', color:'white', p:3}}>
         <Typography variant='h5'>
             All Rights Reserved &copy; AnmolB
         </Typography>
