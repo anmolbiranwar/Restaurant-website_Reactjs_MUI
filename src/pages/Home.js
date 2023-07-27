@@ -1,10 +1,21 @@
 import React from 'react'
 import Layout from '../components/Layout/Layout'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
     <Layout>
-        <h1>Home</h1>
+      <div className='home'>
+        <div className='headerContainer'>
+          <h1>Food Website</h1>
+          <p>Best Food In India</p>
+          <Link>
+          <button>
+            ORDER NOW
+          </button>
+          </Link>
+        </div>
+      </div>
     </Layout>
   )
 }
