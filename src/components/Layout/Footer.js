@@ -16,6 +16,7 @@ const Footer = () => {
         },
         "& svg:hover":{
             color:'goldenrod',
+            transform:'translateX(5px)', color:'goldenrod',
             transform:'translateX(5px)',
             transition:"all 400ms",
         }
