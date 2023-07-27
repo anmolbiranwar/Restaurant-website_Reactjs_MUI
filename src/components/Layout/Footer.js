@@ -1,10 +1,15 @@
 import React from 'react'
+import { Box, Typography } from '@mui/material'
 
 const Footer = () => {
   return (
-    <div>
-        <h1>Footer</h1>
-    </div>
+    <>
+    <Box>
+        <Typography variant='h5'>
+            All Rights Reserved &copy; AnmolB
+        </Typography>
+    </Box>
+    </>
   )
 }
 
