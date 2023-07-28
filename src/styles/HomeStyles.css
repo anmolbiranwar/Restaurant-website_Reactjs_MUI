@@ -31,7 +31,7 @@
 }
 
 .headerContainer button{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.932);
     margin-top: 20px;
     border: none;
     border-radius: 5px;
@@ -40,5 +40,47 @@
     width: 180px;
     text-decoration: none;
     color: white;
+    font-size: 18px;
+}
+
+.headerContainer button:hover{
+    color: goldenrod;
     font-size: 20px;
+    background-color:black ;
+    box-shadow: 3px 3px 3px rgb(138, 72, 11);
+}
+
+/* mobile view */
+
+@media only screen and (max-width:600px){
+    .home{
+        justify-content: center;
+        align-items: center;
+    }
+    .headerContainer{
+        margin-left: 0;
+        border-radius: 10px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #121619;
+        color: white;
+    }
+    .home .headerContainer h1{
+        font-size: 40px;
+        height: 30px;
+        margin: 30px 0px;
+        color: white;
+    }
+    .home .headerContainer p{
+        font-size: 30px;
+        color: white;
+    }
+    .headerContainer button {
+        background-color: white;
+        color: #121619;
+        margin-bottom: 30px;
+    }
 }
