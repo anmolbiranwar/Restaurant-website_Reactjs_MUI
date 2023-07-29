@@ -18,6 +18,9 @@ const About = () => {
           "& p":{
             textAlign:'justify',
           },
+          "@media(max-width:600px)":{
+            mt:0,
+          },
         }}
         >
           <Typography variant='h4'>Welcome to My Restaurant</Typography>
