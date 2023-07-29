@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import {AppBar, Drawer, Box, IconButton, Toolbar, Typography, Divider} from "@mui/material";
 import FastfoodIcon from '@mui/icons-material/Fastfood';
+import Logo from '../../images/logo.svg'
 import MenuIcon from '@mui/icons-material/Menu';
 import {Link} from 'react-router-dom';
 import "../../styles/HeaderStyles.css"
@@ -14,9 +15,8 @@ const Header = () => {
   //menu drawer
   const drawer=(
     <Box onClick={handleDrawerToggle} sx={{textAlign:'center'}}>
-           <Typography color={"goldenrod"} variant='h6' component="div" sx={{flexGrow: 1}}>
-            <FastfoodIcon/>
-            My Restaurant
+           <Typography color={"goldenrod"} variant='h6' component="div" sx={{flexGrow: 1, my:2}}>
+           <img src={Logo} alt='logo' height={'70'} width='200' />
             </Typography>
               <ul className='mobile-navigation'>
                 <li>
@@ -44,9 +44,8 @@ const Header = () => {
             >
               <MenuIcon />
             </IconButton>
-          <Typography color={"goldenrod"} variant='h6' component="div" sx={{flexGrow: 1, my:2}}>
-            <FastfoodIcon/>
-            My Restaurant
+          <Typography color={"goldenrod"} variant='h6' component="div" sx={{flexGrow: 1}}>
+            <img src={Logo} alt='logo' height={'70'} width='250' />
             </Typography>
             <Divider />
             <Box sx={{display: {xs:"none", sm:"block"}}}>
