@@ -20,6 +20,9 @@ const About = () => {
           },
           "@media(max-width:600px)":{
             mt:0,
+            "& h4":{
+              fontSize:'1.5rem',
+            },
           },
         }}
         >
