@@ -19,6 +19,9 @@ const Menu = () => {
                     <Typography variant='body2'>
                       {menu.description}
                     </Typography>
+                    <Typography variant='body2'>
+                      {menu.price}
+                    </Typography>
                   </CardContent>
                 </CardActionArea>
               </Card>
