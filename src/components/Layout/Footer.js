@@ -18,7 +18,7 @@ const Footer = () => {
             color:'goldenrod',
             transform:'translateX(5px)', color:'goldenrod',
             transform:'translateX(5px)',
-            transition:"all 400ms",
+            transition:"all 400ms", 
         }
         }}>
             <InstagramIcon />
